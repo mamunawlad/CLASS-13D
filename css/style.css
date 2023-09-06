@@ -1,0 +1,119 @@
+/* COMMON CSS STARTS HERE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    font-family: "arial";
+  }
+  .container {
+    width: 1170px;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  /* COMMON CSS ENDS HERE */
+
+
+  /* 3D ANIMATION STARE HERE */
+
+  .preloader{
+    display: flex;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preloader_cnt{
+    width: 200PX;
+    height: 200PX;
+    
+    position: relative;
+  }
+  .preloader_cnt span:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-top: 7px solid black;
+    border-left: 7px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotateX (323deg) rotateY (21deg) rotateZ (1deg);
+    animation-name: threeDspiner;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+  }
+  .preloader_cnt span:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-bottom: 7px solid black;
+    border-right: 7px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(232deg) translateY(21deg) translateZ(1deg);
+    animation-name: threeDspiner;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+  }
+  @keyframes threeDspiner {
+    0% {
+      transform: rotatex(400deg) rotateY(250deg) rotateZ(1deg);
+    }
+    100% {
+      transform: rotatex(322deg) rotateY(28deg) rotateZ(360deg);
+    }
+  }
+  @keyframes threeDspiner2 {
+    0% {
+      transform: rotatex(380deg) rotateY(250deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotatex(400deg) rotateY(250deg) rotateZ(360deg);
+    }
+  }
+
+  /* 3D ANIMATION ENDS HERE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
